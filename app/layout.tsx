@@ -2,7 +2,7 @@
 import type {Metadata} from 'next';
 import {Inter} from 'next/font/google';
 import './globals.css';
-import Transition from './transition';
+import Transition from './template';
 import Header from '../components/header';
 
 const inter = Inter({subsets: ['latin']});
@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang='pl'>
       <body className={inter.className}>
         <Header />
-        <Transition>{children}</Transition>
+        <main>{children}</main>
       </body>
     </html>
   );
