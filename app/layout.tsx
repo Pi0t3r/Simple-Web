@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='pl'>
-      <body className={`${inter.className} max-w-7xl`}>
+      <body className={`${inter.className} max-w-7xl mx-auto`}>
         <Header />
         <main>{children}</main>
         <BtnBackToTop />
