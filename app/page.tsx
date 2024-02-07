@@ -5,7 +5,7 @@ import References from '@/components/references';
 export default function Home() {
   return (
     <section>
-      <div className='bg-hero-small bg-cover bg-center w-full h-[70vh] shadow-[inset_0px_-1px_75px_200px_#000000a6] text-secondary flex flex-col items-center justify-center'>
+      <div className='bg-hero-small bg-cover bg-center w-full h-[70vh] shadow-[inset_0px_1000px_75px_200px_#000000a6] text-secondary flex flex-col items-center justify-center'>
         <motion.h2
           className='capitalize font-medium text-2xl text-center'
           initial={{x: -100, opacity: 0}}

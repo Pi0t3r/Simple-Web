@@ -17,7 +17,9 @@ export default function Service({image, alt, title}: iService) {
   return (
     <div ref={ref} className='relative w-full'>
       {image && isVisible ? (
-        <Image src={image} alt={alt} width={450} height={450} />
+        <Image src={image} alt={alt} width={450} height={450} style={{
+          width:'100%'
+        }} />
       ) : null}
       <LazyMotion features={domAnimation}>
         <div className='bg-accentDarker border-b border-accent p-5'>
