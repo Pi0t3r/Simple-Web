@@ -12,7 +12,11 @@ const config: Config = {
       secondary: 'var(--color-white)',
       accent: 'rgb(var(--color-main))',
     },
-  
+    extend: {
+      backgroundImage: {
+        'hero-small': "url('/assets/img/hero-small.webp')",
+      },
+    },
   },
   plugins: [],
 };
