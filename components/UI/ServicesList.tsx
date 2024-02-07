@@ -1,4 +1,5 @@
 import {iServiceListArray} from '@/types/types';
+import Banner from './Banner';
 export default function ServiceList() {
   const serviceListArray: iServiceListArray[] = [
     {
@@ -20,7 +21,7 @@ export default function ServiceList() {
   ];
   return (
     <div className='text-secondary w-full text-xl'>
-      <h5 className='p-5 text-3xl'>Zakres usług</h5>
+      <Banner title='Zakres usług' />
       {serviceListArray.map((list, index) => (
         <ul key={index} className='list-disc p-7 border-y'>
           <span className='font-semibold'>{list.title}</span>

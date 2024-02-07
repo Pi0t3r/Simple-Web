@@ -1,5 +1,7 @@
 import {ReactElement} from 'react';
-
+export interface Basic {
+  title: string;
+}
 export interface iSidebar {
   isOpen: boolean;
   setOpen: (open: boolean) => void;
@@ -13,18 +15,15 @@ export interface iLabel {
   type: string;
   isRequired?: boolean;
 }
-export interface iService {
+export interface iService extends Basic {
   image?: string;
-  title: string;
   alt: string;
 }
-export interface iServiceListArray {
-  title: string;
+export interface iServiceListArray extends Basic {
   list: string[];
 }
 
-export interface iProjects {
+export interface iProjects extends Basic {
   id: string;
-  title: string;
   images: string[];
 }

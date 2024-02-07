@@ -15,7 +15,7 @@ export default function Project({id, title, images}: iProjects) {
         <Image
           src={image}
           key={index}
-          alt=''
+          alt='Image interior house'
           width={400}
           height={400}
           style={{width: '100%', marginTop: 10}}
