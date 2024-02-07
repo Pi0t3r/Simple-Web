@@ -22,16 +22,18 @@ export default function ServiceList() {
   return (
     <div className='text-secondary w-full text-xl'>
       <Banner title='Zakres usług' />
-      {serviceListArray.map((list, index) => (
-        <ul key={index} className='list-disc p-7 border-y'>
-          <span className='font-semibold'>{list.title}</span>
-          {list.list.map((item, index) => (
-            <li key={index} className='ml-7 text-base mt-2'>
-              {item}
-            </li>
-          ))}
-        </ul>
-      ))}
+      <div className='md:flex md:justify-between'>
+        {serviceListArray.map((list, index) => (
+          <ul key={index} className='list-disc p-7 border-y-2 md:flex-1 md:border-x-2'>
+            <span className='font-semibold'>{list.title}</span>
+            {list.list.map((item, index) => (
+              <li key={index} className='ml-7 text-base mt-2'>
+                {item}
+              </li>
+            ))}
+          </ul>
+        ))}
+      </div>
     </div>
   );
 }

@@ -15,14 +15,14 @@ export default function Service({image, alt, title}: iService) {
   }, [inView]);
 
   return (
-    <div ref={ref} className='relative w-full'>
+    <div ref={ref} className='relative w-full md:flex'>
       {image && isVisible ? (
         <Image src={image} alt={alt} width={450} height={450} style={{
-          width:'100%'
+          width:'100%',
         }} />
       ) : null}
       <LazyMotion features={domAnimation}>
-        <div className='bg-accentDarker border-b border-accent p-5'>
+        <div className='bg-accentDarker border-b border-accent p-5 md:flex md:flex-col md:items-center md:justify-center w-full'>
           <m.h4
             initial={{x: -100, opacity: 0}}
             animate={isVisible ? {x: 0, opacity: 1} : {}}

@@ -1,5 +1,5 @@
-import Banner from '@/components/UI/Banner';
-import Project from '@/components/UI/Projects';
+import Banner from '@/app/components/UI/Banner';
+import Project from '@/app/components/UI/Projects';
 export default function Projects() {
   const list = [
     {
@@ -40,13 +40,18 @@ export default function Projects() {
     },
   ];
   return (
-    <section className='bg-accentDarker'>
+    <section className='bg-accentDarker pb-10'>
       <Banner title='Nasze projekty' />
 
-      <ul className='text-center p-10 text-accent text-2xl leading-10'>
+      <ul className='text-center p-10 text-accent text-2xl leading-10 md:flex md:justify-between'>
         {list.map((item, index) => (
           <li key={index}>
-            <a href={item.href}>{item.title}</a>
+            <a
+              href={item.href}
+              className='hover:text-secondary transition duration-300'
+            >
+              {item.title}
+            </a>
           </li>
         ))}
       </ul>

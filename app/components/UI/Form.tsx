@@ -24,12 +24,12 @@ const fields = [
 ];
 export default function Form() {
   return (
-    <form action='' className='flex flex-col p-5'>
+    <form action='' className='flex flex-col p-5 max-w-2xl lg:flex-1'>
       {fields.map((field, index) => (
         <Label key={index} {...field} />
       ))}
 
-      <input type='submit' value='Wyślij' className='border p-2' />
+      <input type='submit' value='Wyślij' className='border p-2 hover:bg-accent cursor-pointer hover:text-accentDarker transition duration-300' />
     </form>
   );
 }

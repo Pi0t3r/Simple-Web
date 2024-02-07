@@ -1,7 +1,7 @@
 'use client';
-import Banner from '@/components/UI/Banner';
-import Service from '@/components/UI/Service';
-import ServiceList from '@/components/UI/ServicesList';
+import Banner from '@/app/components/UI/Banner';
+import Service from '@/app/components/UI/Service';
+import ServiceList from '@/app/components/UI/ServicesList';
 
 
 const List = [

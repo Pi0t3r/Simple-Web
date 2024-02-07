@@ -19,13 +19,15 @@ const list = [
 ];
 export default function List() {
   return (
-    <ul id='contact' className='text-center p-14'>
+    <ul id='contact' className='text-center p-14 lg:flex-1 lg:pl-5 lg:pr-0'>
       <span className='text-3xl'>Kontakt</span>
-      {list.map((item, index) => (
-        <li key={index}>
-          <ListItem {...item} />
-        </li>
-      ))}
+      <div className='md:flex  md:justify-between'>
+        {list.map((item, index) => (
+          <li key={index} className='md:flex-1'>
+            <ListItem {...item} />
+          </li>
+        ))}
+      </div>
     </ul>
   );
 }

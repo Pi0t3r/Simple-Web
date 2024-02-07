@@ -3,7 +3,8 @@ import {useState} from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import {Sidebar} from './sidebar';
-import Link from 'next/link';
+
+import Links from './Links';
 export default function Header() {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
@@ -21,21 +22,8 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <nav className='hidden md:block w-1/2'>
-        <ul className='flex justify-between w-full text-secondary '>
-          <li>
-            <Link href='/'>Główna</Link>
-          </li>
-          <li>
-            <Link href='/services'>Usługi</Link>
-          </li>
-          <li>
-            <Link href='/projects'>Projekty</Link>
-          </li>
-          <li>
-            <Link href='/contact'>Kontakt</Link>
-          </li>
-        </ul>
+      <nav className='hidden md:block w-full pr-10'>
+          <Links setOpen={setOpen} styles='flex justify-between w-full text-secondary capitalize'/>
       </nav>
       <Sidebar isOpen={open} setOpen={setOpen} />
     </div>

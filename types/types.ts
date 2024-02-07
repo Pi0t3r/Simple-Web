@@ -27,3 +27,7 @@ export interface iProjects extends Basic {
   id: string;
   images: string[];
 }
+export interface iLinks {
+  setOpen: (value: boolean) => void;
+  styles?: string;
+}
