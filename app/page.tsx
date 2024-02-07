@@ -1,5 +1,5 @@
 'use client';
-import {motion, AnimatePresence} from 'framer-motion';
+import {motion} from 'framer-motion';
 export default function Home() {
   return (
     <section className='bg-hero-small bg-cover bg-center w-full h-[70vh] shadow-[inset_0px_-1px_75px_200px_#000000a6] text-secondary flex flex-col items-center justify-center'>

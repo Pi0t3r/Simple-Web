@@ -11,6 +11,8 @@ const config: Config = {
       primary: 'var(--color-black)',
       secondary: 'var(--color-white)',
       accent: 'rgb(var(--color-main))',
+      accentDarker: 'rgb(var(--color-footer))',
+      none: 'var(--color-none)',
     },
     extend: {
       backgroundImage: {

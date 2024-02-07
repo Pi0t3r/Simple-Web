@@ -5,5 +5,7 @@
 :root {
   --color-black: rgb(19, 18, 18);
   --color-white: rgb(232, 232, 232);
-  --color-main: 154,138,120;
+  --color-main: 154, 138, 120;
+  --color-footer: 38, 38, 38;
+  --color-none: none;
 }
