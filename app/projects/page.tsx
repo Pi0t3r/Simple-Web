@@ -21,6 +21,14 @@ export default function Projects() {
         '/assets/img/project-1.webp','/assets/img/project-2.webp','/assets/img/project-3.webp',
         '/assets/img/project-4.webp', '/assets/img/project-5.webp',
       ]} />
+      <Project id='section_nadwislanska' title='ulica Nadwiślańska' images={[
+        '/assets/img/project-2-1.webp','/assets/img/project-2-2.webp','/assets/img/project-2-3.webp',
+        '/assets/img/project-2-4.webp', '/assets/img/project-2-5.webp',
+      ]} />
+      <Project id='section_house' title='Dom przy jeziorze' images={[
+        '/assets/img/project-3-1.webp','/assets/img/project-3-2.webp','/assets/img/project-3-3.webp',
+        '/assets/img/project-3-4.webp', '/assets/img/project-3-5.webp',
+      ]} />
     </section>
   );
 }

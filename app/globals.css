@@ -9,3 +9,6 @@
   --color-footer: 38, 38, 38;
   --color-none: none;
 }
+html {
+  scroll-behavior: smooth;
+}

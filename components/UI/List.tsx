@@ -4,7 +4,7 @@ import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import ListItem from './ListItem';
 export default function List() {
   return (
-    <ul className='text-center p-14'>
+    <ul id='contact' className='text-center p-14'>
       <span className='text-3xl'>Kontakt</span>
       <li>
         <ListItem

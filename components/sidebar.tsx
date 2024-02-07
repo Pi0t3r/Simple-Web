@@ -32,7 +32,7 @@ export function Sidebar({isOpen, setOpen}: iSidebar) {
             </Link>
           </li>
           <li className='my-5'>
-            <Link href='contact' passHref onClick={handleClickLink}>
+            <Link href='#contact' passHref onClick={handleClickLink}>
               kontakt
             </Link>
           </li>
