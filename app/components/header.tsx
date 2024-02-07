@@ -11,7 +11,7 @@ export default function Header() {
     setOpen(!open);
   };
   return (
-    <div className='bg-primary w-full flex items-center justify-between'>
+    <header className='bg-primary w-full flex items-center justify-between'>
       <nav className='w-full'>
         <ul className='flex items-center justify-between p-5 text-secondary'>
           <li>
@@ -26,6 +26,6 @@ export default function Header() {
           <Links setOpen={setOpen} styles='flex justify-between w-full text-secondary capitalize'/>
       </nav>
       <Sidebar isOpen={open} setOpen={setOpen} />
-    </div>
+    </header>
   );
 }
